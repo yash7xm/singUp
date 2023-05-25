@@ -10,7 +10,8 @@ const reg = document.querySelector('.reg');
 let clickCounter = 0;
 
 singInBtn.addEventListener('click', () => {
-    info.style.transform = 'translateX(151%)';
+    info.style.transform = 'translateX(150%)';
+    info.style.border = 'none';
     singIn.style.left = '0%';
     reg.style.left = '0%';
     regInfo.style.left = '-40%';
@@ -19,6 +20,7 @@ singInBtn.addEventListener('click', () => {
     signInInfo.style.opacity = '1';
     setTimeout(() => {
         regInfo.style.display = 'none';
+        info.style.borderLeft = '1px solid #1e2345';
     }, 300);
     setTimeout(() => {
         signInInfo.style.display = 'flex';
@@ -31,6 +33,7 @@ singInBtn.addEventListener('click', () => {
 
 singUpBtn.addEventListener('click', () => {
     info.style.transform = 'translateX(0%)';
+    info.style.border = 'none';
     singIn.style.left = '40%';
     reg.style.left = '40%';
     regInfo.style.left = '0%';
@@ -39,10 +42,11 @@ singUpBtn.addEventListener('click', () => {
     signInInfo.style.opacity = '0';
     setTimeout(() => {
         regInfo.style.display = 'flex';
-    }, 400);
+        info.style.borderRight = '1px solid #1e2345';
+    }, 300);
     setTimeout(() => {
         signInInfo.style.display = 'none';
-    }, 400);
+    }, 150);
     setTimeout(() => {
         singIn.style.display = 'flex';
         reg.style.display = 'none';

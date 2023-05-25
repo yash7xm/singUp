@@ -22,8 +22,11 @@ body {
     display: flex;
     transition: all 1s ease;
     z-index: 100;
-    background-color: white;
-    /* border: 1px solid #1e2345; */
+    background-color:  #050a18;
+    opacity: 0.8;
+    border: 1px solid #1e2345;
+    backdrop-filter: blur(8px);
+
     /* border-radius: 10px; */
 }
 
@@ -36,9 +39,10 @@ body {
 }
 
 .logo {
-    color: #1e2345;
-    font-size: 1.2rem;
+    color: #9d84ff;
+    font-size: 1.5rem;
     font-weight: 500;
+    letter-spacing: 0.1rem;
     /* mix-blend-mode: difference; */
 }
 
@@ -46,16 +50,17 @@ body {
     position: absolute;
     height: 100%;
     width: 40%;
-    background-color: teal;
-    /* background-color: rgba(0,0,0); */
+    background-color: rgba(0,0,0,0.5);
+    /* background-color:  #050a18; */
     transition: all 1s ease;
     z-index: 200;
-    border: none;
-    
+    border-right:  1px solid #1e2345;
 }
 
 .heading {
     transition: all 1s ease;
+    margin-top: 9rem;
+    margin-bottom: 1.5rem;
 }
 
 .heading > h1 {
@@ -72,22 +77,28 @@ body {
 }
 
 .btn {
-    width: 50%;
-    padding: 0.5rem;
-    background-color: yellow;
-    border-radius: 20px;
-    margin-top: 2.5rem;
+    width: 80%;
+    background-color: transparent;
     cursor: pointer;
+    margin-top: 5rem;
+    /* border: 1px solid #1e2345;
+    border-style: solid; */
 }
+
+
 
 .btn > button {
     border: none;
-    background-color: transparent;
     width: 100%;
-    height: 100%;
+    background-color: transparent;
+    border: 1px solid #9d84ff;
+    border-style: solid;
+    border-radius: 10000rem;
     font-size: 1.2rem;
-    color: teal;
+    color: white;
     font-weight: bold;
+    padding: 0.5rem 2.4rem;
+    line-height: 120%;
 }
 
 button {
@@ -101,7 +112,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     /* mix-blend-mode: difference; */
     z-index: 300;
     left: 0%;
@@ -117,12 +128,15 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+    /* justify-content: center; */
     /* mix-blend-mode: difference; */
     z-index: 300;
     left: 100%;
     display: none;
     opacity: 0;
+    /* border-right: 1px solid #1e2345;
+    border-left: 1px solid #1e2345; */
     transition: left 3s ease, opacity 300ms ease;
 }
 
@@ -144,9 +158,9 @@ button {
 
 .acc {
     font-size: 3rem;
-    /* color: #008080; */
-    color: #8B0000;
+    color: white;
     font-weight: 800;
+    letter-spacing: 0.1rem;
 }
 
 form {
@@ -154,20 +168,49 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    /* gap: 2rem; */
+    width: 100%;
+    position: relative;
 }
 
-form > input {
-   padding: 0.5rem 1rem;
-   border-radius: 5px;
-   border: 1px solid #ccc;
-   background-color: wheat;
+
+.form-group {
+    position: relative;
+    margin-bottom: 2.5rem;
+    width: 60%;
 }
+
+ input {
+   border-radius: 5px;
+   border: 1px solid rgba(157, 132, 255, 0.16);
+   background-color: hsla(0, 0%, 100%, 0.04);
+   height: 2.2rem;
+   padding: 0px 0.8rem;
+   width: 100%;
+   outline: none;
+   color: white;
+   /* margin-left: ; */
+}
+
+ label {
+    color: #9d84ff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    /* margin-bottom: -2rem; */
+    /* margin: 0rem auto; */
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    justify-content: flex-start;
+}
+
 
 form > button {
     padding: 0.5rem 1rem;
-    width: 50%;
-    border-radius: 10px;
+    width: 25%;
+    border-radius: 1000rem;
     border: 1px solid #ccc;
 }
 
