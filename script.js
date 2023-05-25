@@ -7,6 +7,7 @@ const signInInfo = document.querySelector('.signIn-info')
 const regInfo = document.querySelector('.reg-info');
 const singIn = document.querySelector('.signIn');
 const reg = document.querySelector('.reg');
+const mobileSignIn = document.querySelector('.mobile-signIn-btn button');
 let clickCounter = 0;
 
 singInBtn.addEventListener('click', () => {
@@ -51,4 +52,10 @@ singUpBtn.addEventListener('click', () => {
         singIn.style.display = 'flex';
         reg.style.display = 'none';
     }, 250);
+})
+
+mobileSignIn.addEventListener('click', () => {
+    reg.style.left = '-100%';
+    singIn.style.left = '0%';
+    // singIn.style.display = 'flex';
 })

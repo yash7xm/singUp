@@ -34,9 +34,6 @@ body {
     background-color:  #050a18;
     opacity: 0.8;
     border: 1px solid #1e2345;
-    backdrop-filter: blur(8px);
-
-    /* border-radius: 10px; */
 }
 
 .logo-section {
@@ -52,7 +49,6 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
-    /* mix-blend-mode: difference; */
 }
 
 .info {
@@ -60,7 +56,6 @@ body {
     height: 100%;
     width: 40%;
     background-color: rgba(0,0,0);
-    /* background-color:  #050a18; */
     transition: all 1s ease;
     z-index: 200;
     border-right:  1px solid #1e2345;
@@ -73,15 +68,12 @@ body {
 }
 
 .heading > h1 {
-     /* color: rgba(116,112,131); */
      color: white;
     font-size: 2.2rem;
     font-family: 'Raleway', sans-serif;
-    /* transition: all 1s ease; */
 }
 
 .info-text > p {
-     /* color: rgba(116,112,131); */
      color: white;
     padding: 1rem 2.3rem;
     font-family: 'Raleway', sans-serif;
@@ -92,8 +84,6 @@ body {
     background-color: transparent;
     cursor: pointer;
     margin-top: 5rem;
-    /* border: 1px solid #1e2345;
-    border-style: solid; */
 }
 
 
@@ -123,8 +113,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    /* mix-blend-mode: difference; */
     z-index: 300;
     left: 0%;
     transition: left 3s ease, opacity 300ms ease;
@@ -139,15 +127,10 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* justify-content: center; */
-    /* mix-blend-mode: difference; */
     z-index: 300;
     left: 100%;
     display: none;
     opacity: 0;
-    /* border-right: 1px solid #1e2345;
-    border-left: 1px solid #1e2345; */
     transition: left 3s ease, opacity 300ms ease;
 }
 
@@ -157,12 +140,10 @@ button {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     z-index: -1;
-    justify-content: space-evenly;
-    /* mix-blend-mode: difference; */
-    /* display: none; */
+    gap: 4rem;
     transition: all 2s ease;
     left: 40%;
 }
@@ -180,7 +161,6 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 2rem; */
     width: 100%;
     position: relative;
 }
@@ -201,7 +181,6 @@ form {
    width: 100%;
    outline: none;
    color: white;
-   /* margin-left: ; */
 }
 
  label {
@@ -222,7 +201,6 @@ form > button {
     width: 25%;
     border-radius: 1000rem;
     border: 1px solid #ccc;
-    /* color: #9d84ff; */
 }
 
 .reg {
@@ -234,11 +212,14 @@ form > button {
     justify-content: center;
     align-items: center;
     z-index: -1;
-    justify-content: space-evenly;
-    /* mix-blend-mode: difference; */
+    gap: 4rem;
     display: none;
     transition: all 2s ease;
     left: 40%;
+}
+
+.mobile-signIn-btn {
+    display: none;
 }
 
 @media(max-width: 1200px) {
@@ -277,4 +258,79 @@ form > button {
     label {
         font-size: 0.7rem;
     }
+
+    form > button {
+        width: 40%;
+        font-weight: 400;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .reg-info {
+        display: none;
+    }
+
+    .reg {
+        display: flex;
+        width: 100%;
+        left: 0%;
+        transition: all 400ms ease;
+    }
+
+    .signIn {
+        /* display: none; */
+        width: 100%;
+        left: 100%;
+        transition: left 400ms ease;
+    }
+
+    .form-group {
+        width: 75%;
+    }
+
+    form > button {
+        width: 40%;
+        font-weight: 400;
+    }
+
+    .gradient {
+        height: 200%;
+    }
+
+    .logo {
+        letter-spacing: 0;
+    }
+
+    .mobile-signIn-btn {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        margin-top: -2rem;
+    }
+
+    .mobile-signIn-btn > button {
+        width: 100%;
+        height: 100%;
+        font-size: 0.8rem;
+        background-color: transparent;
+        border: 1px solid #9d84ff;
+        color: white;
+        border-radius: 1000rem;
+        padding: 0.5rem;
+        transition: all 300ms ease;
+    }
+
+    .mobile-signIn-btn > button:hover {
+        background-color: #9d84ff;
+    }
+
 }
