@@ -59,7 +59,7 @@ body {
     position: absolute;
     height: 100%;
     width: 40%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0);
     /* background-color:  #050a18; */
     transition: all 1s ease;
     z-index: 200;
@@ -76,6 +76,7 @@ body {
      /* color: rgba(116,112,131); */
      color: white;
     font-size: 2.2rem;
+    font-family: 'Raleway', sans-serif;
     /* transition: all 1s ease; */
 }
 
@@ -83,6 +84,7 @@ body {
      /* color: rgba(116,112,131); */
      color: white;
     padding: 1rem 2.3rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .btn {
@@ -105,7 +107,7 @@ body {
     border-radius: 10000rem;
     font-size: 1.2rem;
     color: white;
-    font-weight: bold;
+    font-weight: 400;
     padding: 0.5rem 2.4rem;
     line-height: 120%;
 }
@@ -170,6 +172,7 @@ button {
     color: white;
     font-weight: 800;
     letter-spacing: 0.1rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 form {
@@ -207,8 +210,6 @@ form {
     font-weight: 400;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    /* margin-bottom: -2rem; */
-    /* margin: 0rem auto; */
     position: absolute;
     top: -20px;
     left: 0px;
@@ -221,6 +222,7 @@ form > button {
     width: 25%;
     border-radius: 1000rem;
     border: 1px solid #ccc;
+    /* color: #9d84ff; */
 }
 
 .reg {
